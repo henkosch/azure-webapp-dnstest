@@ -1,5 +1,9 @@
 # azure-webapp-dnstest
 
+### Description of the issue
+
+DNS resolution is not working in Web App for Containers (linux) when using custom docker image. The DHCP generated resolv.conf is broken. After using SSH to log in to the container trying nslookup google.com also fails with DNS resolution error.
+
 ### Dockerhub
 https://hub.docker.com/r/henrikschnell/azure-webapp-dnstest/
 
